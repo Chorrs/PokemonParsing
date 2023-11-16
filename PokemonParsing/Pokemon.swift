@@ -24,7 +24,7 @@ struct Sprites: Decodable {
 }
 
 struct Home: Decodable {
-    let  front: Front
+    let  home: Front
 }
 
 struct Front: Decodable {

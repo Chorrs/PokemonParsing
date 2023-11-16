@@ -13,6 +13,7 @@ class PokemonListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchPokemons()
     
     }
     private func fetchPokemons() {
@@ -35,3 +36,16 @@ extension PokemonListViewController {
     }
 }
 
+//let urlString = URL(string: "https://pokeapi.co/api/v2/pokemon")
+//if let url = urlString {
+//    let task = URLSession.shared.dataTask(with: url) { (data, response, error)
+//        if let error = error {
+//            print("DataTas error:" + "\(error.localizedDescription)" + "\n")
+//        } else if let usableData = data,
+//                  let response = response as? HTTPURLResponse,
+//                  response.statusCode == 200 {
+//            print(usableData)
+//        }
+//    }
+//}
+//task.resume()
